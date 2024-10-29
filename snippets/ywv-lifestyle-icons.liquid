@@ -1,0 +1,43 @@
+<!-- Grid Gallery Section Started -->
+<section class="grid-gallery-wallpaper">
+  <div class="lifestyleGrid">
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image1 | image_url }}" alt="grid image"></div>
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image2 | image_url }}" alt="grid image"></div>
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image3 | image_url }}" alt="grid image"></div>
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image4 | image_url }}" alt="grid image"></div>
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image5 | image_url }}" alt="grid image"></div>
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image6 | image_url }}" alt="grid image"></div>
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image7 | image_url }}" alt="grid image"></div>
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image8 | image_url }}" alt="grid image"></div>
+    <div class="lfg"><img src = "{{ block.settings.lifestyle_image9 | image_url }}" alt="grid image"></div>
+  </div>
+</section>
+
+<style>
+  .grid-gallery-wallpaper .lifestyleGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    /* width:50%; */
+  }
+  .grid-gallery-wallpaper .lfg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .grid-gallery-wallpaper .lfg img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  @media(max-width:360px){
+    .grid-gallery-wallpaper .lifestyleGrid {
+      grid-gap: 2px;
+      width:100%;
+    }
+  }
+</style>
+<!-- Grid Gallery Section ended -->
+

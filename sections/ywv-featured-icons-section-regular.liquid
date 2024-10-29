@@ -1,0 +1,131 @@
+<div class="whyshopwithus-wrapper container">
+  
+  <div class="shopwithus-title">
+    <h3>{{ section.settings.heading }}</h3>
+  </div>
+  
+  <div class="mobile-shop-with-us">    
+    {% for block in section.blocks %}
+    <div class="bx-shop">
+      <img src="{{ block.settings.icon-1 | image_url }}">
+      <p>{{ block.settings.text }}</p>
+    </div>
+    {% endfor %}    
+  </div>
+  
+  <div class="shopwithus-list horizontal-scroll desktop">    
+    {% for block in section.blocks %}
+      <div class="shopwithus-bxm">
+        <img src="{{ block.settings.icon-1 | image_url }}">
+        <div class="showithus-content">
+          {{ block.settings.text }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div id="lifestyle_icons_slider" class="owl-carousel shopwithus-list horizontal-scroll mobile">    
+    {% for block in section.blocks %}
+      <div class="shopwithus-bxm">
+        <img src="{{ block.settings.icon-1 | image_url }}">
+        <div class="showithus-content">
+          {{ block.settings.text }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#lifestyle_icons_slider').owlCarousel({
+      items: 1.2,
+      margin: 10,
+      dots: false,
+      autoplay: false,
+      loop: true,
+      nav: true,
+      center: false,
+      navText: ['<img src="{{ "corr.png" | asset_url }}">', '<img src="{{ "corr.png" | asset_url }}">'],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        330: {
+          items: 1.2,
+        },
+        400: {
+          items: 1.4,
+        },
+        470: {
+          items: 1.8,
+        },
+        550: {
+          items: 2,
+        },
+        600: {
+          items: 2.2,
+        },
+        640: {
+          items: 2.4,
+        },
+        690: {
+          items: 2.8,
+        },
+        730: {
+          items: 3,
+        },
+        750: {
+          items: 3.2,
+        },
+        800: {
+          items: 3.4,
+        },
+        860: {
+          items: 3.8,
+        },
+        950: {
+          items: 4,
+        },
+      }
+    });
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Featured Icons (C)",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Custom Made By Hand Just For You !"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "icons-with-text",
+        "name": "IWT - Block",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon-1",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Heading"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "Featured Icons (C)"
+      }
+    ]
+  }
+{% endschema %}

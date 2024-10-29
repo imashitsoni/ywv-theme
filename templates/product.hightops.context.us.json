@@ -1,0 +1,27 @@
+{
+  "parent": "product.hightops.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/1-min_03884a63-06d7-4713-88a0-aa23e48ec641.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/6-min_2914af3c-dd32-4cbd-8105-31a9f92ade84.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/2-min_2183f9ab-b19f-4418-8a3f-763f0a13c267.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/3-min_32c41e59-806d-41d8-b788-e5b3e3353f3b.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/9-min_51698bbc-c217-4d86-b5d4-a4d7fa5afa47.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/7-min_b78a3dcf-4b56-4694-a91d-e630b3f82563.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/5-min_b13e8bf9-5ec2-4eef-9d58-d8f77d9280db.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/1-min_03884a63-06d7-4713-88a0-aa23e48ec641.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/4-min_80fbbf96-b16f-47d8-a64d-948801ee6fae.webp"
+          }
+        }
+      }
+    }
+  }
+}

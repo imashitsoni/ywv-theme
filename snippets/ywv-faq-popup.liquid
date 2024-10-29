@@ -1,0 +1,146 @@
+<!-- FAQ Popup -->
+<style>
+  .modal-faq {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed !important;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    padding: 0;
+    padding: 20px;
+    scrollbar-width: thin;
+  }
+  .modalfaqwrap {
+    position: relative;
+  }
+  .modal-faq .modal-content {
+    background-color: #fefefe;
+    max-width: 750px;
+    margin: auto;
+    padding-top: 35px !important;
+    padding-bottom: 25px;
+    
+    font-size: 18px;
+  }
+  .modal-faq .content-wrap {
+    margin:0px 42px;
+  }
+  .modal-faq .footer-btn {
+    display:none;
+  }
+  .modal-faq .close {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0 1px 6px rgba(157, 157, 157, 0.5);
+    color: #aaaaaa;
+    position: absolute;
+    top: -14px;
+    z-index: 9999;
+    right: 16px;
+    cursor: pointer;
+  }
+  .modal-faq .close img{
+    width:30px;
+    height:30px;
+  }
+  .modalfaqcontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-faq h3 {
+    margin-top: 35px;
+  }
+  .modal-faq h3:first-child {
+    margin-top: 0px;
+  }
+  @media(max-width:1024px){
+    .modal-faq .modal-content {
+    }
+  }
+  @media(max-width:768px){
+    .modal-faq {
+      padding: 0;
+    }
+    .modal-faq .modal-content {
+      max-width: 100%;
+      font-size: 12.5px;
+      max-height: 80vh;
+      overflow: auto;
+    }
+    .modal-faq .content-wrap {
+      margin: 0px 15px;
+    }
+    .modal-faq .footer-btn {
+      display: flex;
+    }
+    .modal-faq .select-size-btn {
+      .modalfaqwrap {
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        max-height: 90vh;
+      }
+      width: 99%;
+      margin: 4px;
+      position: fixed;
+      bottom: 0;
+      background: #33b159;
+      color: #fff;
+      border: 1px solid #33b159;
+      padding: 1px 20px 0;
+      text-align: center;
+      cursor: pointer;
+      min-height: 55px;
+      height: 40px;
+      line-height: 1.2;
+      vertical-align: top;
+      font-style: normal;
+      font-size: 23px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: 'Urbanist',sans-serif !important;
+      font-weight: bold;
+    }
+    
+  }
+  @media(max-width:360px){
+    .modal-faq .select-size-btn {
+      width: 98%;
+    }
+  }
+
+</style>
+
+<div class="modal-faq" id="faqLinkPopup"> 
+  <div class="modalfaqcontainer">
+    <div class="modalfaqwrap">
+      <span class="close" id="close-faq"> 
+        <img src="{{ 'crossicon.png' | asset_url }}">
+      </span> 
+      <div class="modal-content"> 
+        <div class="content-wrap">
+          {{ block.settings.faq_content }}
+        </div>
+        <!-- <div class="footer-btn">
+          <button id="size_button" class="select-size-btn" type="button">Select Your Size</button>
+        </div> -->
+      </div> 
+    </div> 
+  </div> 
+</div>
+<!-- FAQ Popup ends -->

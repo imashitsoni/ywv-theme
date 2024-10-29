@@ -1,0 +1,27 @@
+{
+  "parent": "product.flipflops.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/3-min_d31fe977-6262-4858-b5ac-de82acceed86.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/2-min_e62d14df-a824-4c6d-8588-8e3fac7d81a9.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/1-min_0d8cb816-e067-4326-9ced-41d9b11d6d3d.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/8-min_2d3d761f-554e-488d-be44-f865ffbea9db.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/4-min_d5cb0d49-8aee-4765-8f39-116d46cb5d28.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/6-min_573fcddc-7017-4d42-8111-315a92db73f2.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/7-min_98019972-52b8-469d-9903-773cae2c54fa.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/5-min_e0e192ac-add8-422f-a142-f413032a70c0.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/9-min_2c6d06e4-45db-4a02-87cc-690eb1c1ecd4.webp"
+          }
+        }
+      }
+    }
+  }
+}

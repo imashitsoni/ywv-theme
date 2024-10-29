@@ -1,0 +1,24 @@
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function(){
+      
+    //FAQ block Popup Functionality
+    let faqLinkBtn = document.querySelector('#faqLinkBtn');
+    console.log('faqLinkBtn', faqLinkBtn);
+    let faqLinkPopup = document.querySelector('#faqLinkPopup');
+    let closeFaq = document.querySelector('#close-faq');
+    if(faqLinkBtn){
+      faqLinkBtn.addEventListener('click', function(){
+        faqLinkPopup.style.display = "block";
+      });
+    }
+    if(closeFaq){
+      closeFaq.addEventListener('click', function(){
+        faqLinkPopup.style.display = "none";
+      });
+    }
+  
+    
+}, false);
+
+</script>

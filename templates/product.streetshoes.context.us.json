@@ -1,0 +1,27 @@
+{
+  "parent": "product.streetshoes.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/1-min_e642b2e5-283f-4fb3-9bc2-b4c09e92d6fe.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/5-min_df27917c-1d72-45e5-87ab-96ab386d0d5b.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/2-min_47e2acb1-d0c0-41f0-8810-4d77960070df.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/3-min_8758a700-cb3b-49d4-bf3f-7cb83711129b.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/4-min_c0f5113e-8714-4107-9ba2-9e8803c8ce01.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/6-min_5c3ca3d8-1bd6-47cd-8010-caa3ba7099aa.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/7-min_e3fcffde-69dc-466c-a059-095c880ecfd3.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/8-min_2bd39742-b2f8-4358-bd15-3a2ac16feef4.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/9-min_93b7b104-016b-4272-b790-4e989dde8a30.webp"
+          }
+        }
+      }
+    }
+  }
+}

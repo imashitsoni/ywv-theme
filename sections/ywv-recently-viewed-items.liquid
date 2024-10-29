@@ -1,0 +1,266 @@
+<!-- Recently Viewed Items Section Start -->
+<div class="recently-viewed-wrapper">
+  <div class="heading">
+    {{ section.settings.heading }}
+  </div>
+  <div class="recently-viewed-item owl-carousel owl-theme " id="recent_view_slider">
+    <!-- Recently viewed products will appear here -->
+  </div>
+</div>
+<!-- Recently Viewed Items Section End -->
+
+<!-- Recently Viewed Items Script Start -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const maxProducts = 10;
+
+    function getProductData() {
+      return {
+        productTitle: '{{ product.title }}',
+        productImg: '{{ product.featured_media | image_url: width: 500 }}',
+        productPrice: '{{ product.price | money }}',
+        productUrl: '{{ product.url }}',
+        productImageAltText: '{{ product.featured_media.alt | escape }}',
+      };
+    }
+
+    function updateRecentlyViewedProducts() {
+      const newProduct = getProductData();
+      const localData = localStorage.getItem('recentlyViewedProduct');
+      let productList = localData ? JSON.parse(localData) : [];
+
+      // Check if the product already exists in the list
+      const productExists = productList.some((product) => product.productTitle === newProduct.productTitle);
+
+      if (!productExists) {
+        // Add the new product to the list
+        productList.push(newProduct);
+
+        // if list contains exceeds maxProducts then remove the oldest product
+        if (productList.length > maxProducts) {
+          productList.shift();
+        }
+
+        // Save the updated list to localStorage
+        localStorage.setItem('recentlyViewedProduct', JSON.stringify(productList));
+      }
+    }
+
+    function displayRecentlyViewedProducts() {
+      let localData = localStorage.getItem('recentlyViewedProduct');
+      let productList = localData ? JSON.parse(localData) : [];
+      let itemsContainer = document.querySelector('.recently-viewed-item');
+
+      itemsContainer.innerHTML = '';
+      let productHtml = '';
+      let newProduct = getProductData();
+      productList.forEach((product) => {
+        let hide = false;
+        if (product.productTitle == newProduct.productTitle) {
+          hide = true;
+        }
+        if (!hide) {
+          if (product.productTitle) {
+            productHtml += `
+              <div class="item recently-viewed-product" ${hide}>
+                <a href="${product.productUrl}">
+                  <img src="${product.productImg}" alt="${product.productImageAltText}" />
+                  <div class="productTitle">${product.productTitle}</div>
+                </a>
+              </div>
+            `;
+          }
+        }
+      });
+      itemsContainer.innerHTML = productHtml;
+    }
+
+    updateRecentlyViewedProducts();
+    let localData = localStorage.getItem('recentlyViewedProduct');
+    let productList = localData ? JSON.parse(localData) : [];
+
+    if (productList.length > 1) {
+      displayRecentlyViewedProducts();
+      let productTotlaItems = 0;
+      let recentItemLoop = true;
+      let mobProductTotlaItems = 0;
+      let mobRecentItemLoop = true;
+
+      //DESKTOP DISPLAY
+      if (productList.length > 0 && productList.length <= 5) {
+        productTotlaItems = productList.length;
+        recentItemLoop = false;
+      } else {
+        productTotlaItems = 5;
+
+        const recentItemCarousel = document.getElementById('recent_view_slider');
+        recentItemCarousel.classList.add('fullcarousel');
+      }
+
+      // MOBILE DISPLAY
+      if (productList.length > 0 && productList.length == 1) {
+        mobProductTotlaItems = productList.length;
+        mobRecentItemLoop = false;
+      } else {
+        mobProductTotlaItems = 2;
+      }
+
+      if (window.innerWidth >= 1024 && productList.length > 1) {
+        let custom_collection_slider = $('#recent_view_slider');
+        custom_collection_slider.owlCarousel({
+          margin: 20,
+          nav: true,
+          center: false,
+          navText: [
+            `<img class="owl-nav-img owl-prev-img" src="https://cdn.shopify.com/s/files/1/0813/3381/3559/files/leftArrow-removebg-preview_copy.png?v=1721282073">`,
+            `<img class="owl-nav-img owl-next-img" src="https://cdn.shopify.com/s/files/1/0813/3381/3559/files/rightArrow-removebg-preview.png?v=1721282105">`,
+          ],
+          dots: false,
+          loop: recentItemLoop,
+          autoplay: false,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 2,
+              nav: true,
+            },
+            768: {
+              items: 2,
+            },
+            1024: {
+              items: productTotlaItems,
+              nav: true,
+            },
+          },
+        });
+      } else if (window.innerWidth <= 768) {
+        let custom_collection_slider = $('#recent_view_slider');
+        custom_collection_slider.owlCarousel({
+          margin: 10,
+          nav: true,
+          navText: [
+            `<img class="owl-nav-img owl-prev-img" src="https://cdn.shopify.com/s/files/1/0813/3381/3559/files/leftArrow-removebg-preview_copy.png?v=1721282073">`,
+            `<img class="owl-nav-img owl-next-img" src="https://cdn.shopify.com/s/files/1/0813/3381/3559/files/rightArrow-removebg-preview.png?v=1721282105">`,
+          ],
+          dots: false,
+          loop: mobRecentItemLoop,
+          autoplay: false,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: mobProductTotlaItems,
+              nav: true,
+            },
+            768: {
+              items: 2,
+            },
+            1024: {
+              items: 5,
+            },
+          },
+        });
+      }
+    } else {
+      document.querySelector('.recently-viewed-wrapper').remove();
+    }
+  });
+</script>
+<!-- Recently Viewed Items Script End -->
+
+<!-- Recently Viewed Items Style Start -->
+<style>
+  .recently-viewed-wrapper {
+    margin: 50px 0;
+  }
+  .recently-viewed-wrapper .heading {
+    margin: 10px;
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .recently-viewed-wrapper .recently-viewed-item {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+  }
+  .recently-viewed-wrapper .recently-viewed-product {
+    text-align: center;
+  }
+  .recently-viewed-wrapper .recently-viewed-product img {
+    width: 80%;
+  }
+  .recently-viewed-wrapper .recently-viewed-product a {
+    text-decoration: none;
+  }
+  .recently-viewed-wrapper .productTitle {
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  @media (max-width: 360px) {
+    .recently-viewed-wrapper .recently-viewed-product a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .recently-viewed-wrapper .owl-theme .owl-nav {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      /* top: 30%; */
+      height: 200px;
+    }
+    .recently-viewed-wrapper .owl-theme .owl-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .recently-viewed-wrapper img.owl-nav-img {
+      width: 20px;
+    }
+    .recently-viewed-wrapper .owl-theme .owl-nav [class*='owl-'] {
+      padding: unset;
+      background: unset;
+    }
+    .recently-viewed-wrapper .owl-theme .owl-nav .owl-next {
+      box-shadow: 3px -1px 8px 0 rgb(162 162 162 / 20%), 0 4px 8px 0 rgb(120 120 120 / 19%);
+    }
+    .recently-viewed-wrapper .owl-theme .owl-nav .owl-prev {
+      box-shadow: 3px -1px 8px 0 rgb(162 162 162 / 20%), 0 4px 8px 0 rgb(120 120 120 / 19%);
+    }
+  }
+</style>
+<!-- Recently Viewed Items Style End -->
+
+{% schema %}
+{
+  "name": "Recently Viewed Items (C)",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Recently Viewed Items",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recently Viewed Items (C)"
+    }
+  ]
+}
+{% endschema %}

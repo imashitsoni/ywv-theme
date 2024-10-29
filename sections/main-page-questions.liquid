@@ -1,0 +1,229 @@
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .shopify-section section > .page-width.scroll-trigger.animate--slide-in{
+    overflow: hidden;
+  }
+  
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<style>
+.faq-container {
+   font-family: "Nunito", sans-serif;
+   width: 100%;
+   margin: 0 auto;
+   padding: 10px;
+   box-sizing: border-box;
+   max-width: 1024px;
+}
+.faq-title {
+   text-align: center;
+   font-weight: 800;
+   font-size: 36px;
+   line-height: 1.2;
+   letter-spacing: 3.24px;
+   color: #000000;
+}
+.faq-toptext {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 18px;
+   letter-spacing: 0.29px;
+   color: #333333;
+   margin-top: 10px;
+   padding: 0 10px;
+}
+.faq-toptext span a {
+   font-weight: 600;
+   color: #000000;
+}
+.faq-subsection {
+   cursor: pointer;
+   padding: 15px 30px;
+   padding-right: 40px;
+   border-top: 1px solid #F1F1F1;
+   position: relative;
+}
+.faq-subsection:last-child {
+   border-bottom: 1px solid #F1F1F1;
+}
+.faq-subsection-title {
+   text-align: left;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 18px;
+   letter-spacing: 0.29px;
+   color: #333333;
+   opacity: 1;
+}
+.faq-subsection:hover .faq-subsection-title {
+   font-weight: 800;
+}
+.faq-subsection::before, .faq-subsection::after {
+   content: "";
+   position: absolute;
+   background: #000;
+   height: 2px;
+   position: absolute;
+   top: 23px;
+   right: 25px;
+   width: 8px;
+   transition: transform 500ms ease;
+}
+.faq-subsection:hover::before, .faq-subsection:hover::after {
+   width: 10px;
+}
+.faq-subsection::after {
+   transform: translateX(50%) rotate(90deg);
+}
+.faq-subsection::before {
+   transform: translateX(50%) rotate(0);
+}
+.faq-subsection.accordion-open::before, .faq-subsection.accordion-open::after {
+   width: 10px;
+}
+.faq-subsection.accordion-open .faq-subsection-title {
+   font-weight: 800;
+}
+.faq-subsection.accordion-open::after {
+   width: 10px;
+   transform: translateX(50%) rotate(0deg);
+}
+.faq-subsection ul {
+   margin-left: 40px;
+}
+.faq-section {
+   margin-top: 35px;
+}
+.faq-section-title {
+   text-align: left;
+   font-size: 22px;
+   line-height: 43px;
+   font-weight: bold;
+   letter-spacing: 1.98px;
+   color: #333333;
+   text-transform: capitalize;
+   opacity: 1;
+   padding: 0 30px;
+}
+.faq-subsection-content {
+   text-align: left;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   letter-spacing: 0.29px;
+   color: #333333;
+   opacity: 1;
+   margin-top: 15px;
+   display: none;
+   transition: height 0.35s ease-in-out;
+   overflow: hidden;
+}
+.faq-container a{
+   color: #0000ee;
+   text-decoration: underline;
+}
+.faq-container a:hover {
+   color: #0000ee;
+   text-decoration: underline;
+}
+.faq-container a:visited {
+   color: #0000ee;
+   text-decoration: underline;
+}
+.faq-container .faq-subsection-content.active {
+   display: block;
+}
+</style>
+
+<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {{ page.content }}
+  </div>
+</div>
+<script>
+const faqsection = document.querySelectorAll('.faq-subsection');
+if(faqsection) {
+   faqsection.forEach( (element) => {
+      element.addEventListener('click' , function(e) { 
+         e.preventDefault();
+         this.classList.toggle("accordion-open");
+
+         let getFaqContent = this.querySelector('.faq-subsection-content');
+         
+         if (!this.classList.contains('accordion-open')) {
+            getFaqContent.style.height = '0px';
+
+            getFaqContent.addEventListener('transitionend', function () {
+               getFaqContent.classList.remove('active');
+            }, {
+               once: true
+            });
+         } else {
+            getFaqContent.classList.add('active');
+            getFaqContent.style.height = 'auto';
+
+            var getFaqHeight = getFaqContent.clientHeight + 'px';
+            
+            getFaqContent.style.height = '0px';
+
+            setTimeout(function () {
+               getFaqContent.style.height = getFaqHeight;
+            }, 1);
+         }
+      })}
+   );
+}
+const faqcontent = document.querySelectorAll('.faqcontent');
+if(faqcontent) {
+   faqcontent.forEach( (element) => {
+      element.addEventListener('click' , function(e) { 
+         e.stopPropagation();
+      })}
+   );
+}
+</script>
+{% schema %}
+{
+  "name": "Page Questions",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,27 @@
+{
+  "parent": "product.slipons.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/1-min_1205ad1a-657b-45c4-bbf4-a649df8557b1.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/2-min_305dc191-2ce2-4bea-9f32-503e580cf923.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/10-min_1.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/4-min_9c2c32a5-4d39-4b3c-b37e-71c91656208b.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/5-min_a6ad8990-0c37-4b3e-b260-98b505086ec1.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/6-min_9774aaaf-e787-44ff-84c2-270d3ee769e9.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/7-min_ae7fa27a-fc43-4687-ad8d-10e84ced05fb.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/8-min_811ee113-9355-47b0-b3cb-855bfafa2715.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/9-min_5f4dedc3-2a64-4747-86a1-536d9ba36aa0.webp"
+          }
+        }
+      }
+    }
+  }
+}

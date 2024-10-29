@@ -1,0 +1,11 @@
+<div class="accordion">
+    {{ section.settings.proddescription }}
+</div>
+{% for block in section.blocks %}
+    <a href="{{ block.settings.link }}">{{ block.settings.linktext }}</a>
+{% endfor %}   
+{% schema %}
+{
+    "name": "Product Description",
+}
+{% endschema %}

@@ -1,0 +1,27 @@
+{
+  "parent": "product.aquabarefootshoes.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/1_3b858381-7b59-49ee-8a83-87ce4a44490e.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/2_cf51a7f9-1fe4-4c45-bbfc-df082bf6dfa3.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/3_cf738111-d264-466b-bad5-63de3865d020.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/6_f1f863eb-9e96-45ca-8379-14814afec391.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/5_ce48b931-dda5-408c-8baa-d61423608db2.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/7_00a7dac9-0c7e-4813-9293-b85478d83b4f.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/8_a124ae32-f55b-46a8-b425-cba825918f38.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/9_d5d21ac4-90e1-4d1b-8f85-6527fec4fe04.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/10-min.webp"
+          }
+        }
+      }
+    }
+  }
+}

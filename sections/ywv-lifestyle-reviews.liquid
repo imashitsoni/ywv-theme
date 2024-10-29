@@ -1,0 +1,222 @@
+<div class="product_reviews_with_lifestyle-pics-slider-wrapper">
+  <div class="product_reviews_with_lifestyle-heading">
+    <h1>{{ section.settings.heading }}</h1>
+  </div>
+  <div class="product_reviews_with_lifestyle-wrapper">
+    <div id="productclientreview" class="owl-carousel product_reviews_with_lifestyle-snippet">
+      {% for block in section.blocks %}
+        <div class="review-wrapper">
+          <div class="img-wrapper">
+            <img src="{{ block.settings.review_image | img_url: 'grande' }}" alt="customer photo">
+          </div>
+          <div class="details-wrapper">
+            <p class="name">{{ block.settings.customer_name }}</p>
+            <p class="date YWV_splittest_1545_css">{{ block.settings.review_date }}</p>
+            <p class="message">"{{ block.settings.review_content }}"</p>
+            <div class="stars-wrapper">
+              {% for i in (1..block.settings.review_ratings) %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="23.982" height="25.027" viewBox="0 0 23.982 25.027">
+                  <defs>
+                    <style>
+                      .s {
+                        fill: #ffd200;
+                        stroke: #ffd200;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <path class="s" d="M659.991,1008.5l3.134,9.4h8.357l-6.268,5.223,3.134,9.4-8.357-6.268-8.357,6.268,3.134-9.4L648.5,1017.9h8.357Z" transform="translate(-648 -1008)" />
+                </svg>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    let maxItemDesktop = 6;
+    let maxItemLaptop = 4;
+    let maxItemTablet = 2;
+    let maxItemDMobile = 2;
+    let hapTotalReviews = 1;
+    let hapReviewsLoop = true;
+    let hapReviewsNav = true;
+    let hapReviewsAutoWidth = false;
+    let getHappyCustomerItem = document.getElementsByClassName('review-wrapper');
+    // console.log('getHappyCustomerItem', getHappyCustomerItem.length)
+
+    if (getHappyCustomerItem.length > 0 && getHappyCustomerItem.length <= 4) {
+      hapTotalReviews = getHappyCustomerItem.length;
+      hapReviewsLoop = false;
+      hapReviewsNav = false;
+      hapReviewsAutoWidth = true;
+    } else {
+      hapTotalReviews = maxItemDesktop;
+
+      const hapCustReviewCarousel = document.getElementById('productclientreview');
+      hapCustReviewCarousel.classList.add('sectionfullwidth');
+    }
+
+    if (window.innerWidth <= 768) {
+      if (getHappyCustomerItem.length == 1) {
+        hapReviewsLoop = false;
+      } else {
+        hapReviewsLoop = true;
+      }
+    }
+
+    $('#productclientreview').owlCarousel({
+      dots: false,
+      autoplay: false,
+      nav: hapReviewsNav,
+      center: false,
+      autoWidth: hapReviewsAutoWidth,
+      navText: ['<img src="{{ "corr.png" | asset_url }}">', '<img src="{{ "corr.png" | asset_url }}">'],
+      responsive: {
+        // 0: {
+        //   items: maxItemDMobile,
+        //   loop: hapReviewsLoop,
+        //   nav: true,
+        // },
+        // 768: {
+        //   items: maxItemTablet,
+        //   loop: true,
+        // },
+        // 992: {
+        //   items: maxItemLaptop,
+        //   loop: hapReviewsLoop,
+        // },
+        // 1441: {
+        //   items: hapTotalReviews,
+        //   loop: hapReviewsLoop,
+        // },
+         0: {
+          items: 1,
+        },
+        330: {
+          items: 1.2,
+        },
+        400: {
+          items: 1.4,
+        },
+        470: {
+          items: 1.8,
+        },
+        550: {
+          items: 2,
+        },
+        600: {
+          items: 2.2,
+        },
+        640: {
+          items: 2.4,
+        },
+        690: {
+          items: 2.8,
+        },
+        730: {
+          items: 3,
+        },
+        750: {
+          items: 3.2,
+        },
+        800: {
+          items: 3.4,
+        },
+        860: {
+          items: 3.8,
+        },
+        950: {
+          items: 4,
+        },
+        1000: {
+          items: 4.2,
+        },
+        1050: {
+          items: 4.4,
+        },
+        1100: {
+          items: 4.8,
+        },
+        1150: {
+          items: 5,
+        },
+        1200: {
+          items: 5.2,
+        },
+        1250: {
+          items: 5.4,
+        },
+        1300: {
+          items: 5.8,
+        },
+        1367: {
+          items: 6,
+        },
+      },
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Lifestyle Reviews (C)",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Happy Customers!"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "repeater_block",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "review_date",
+          "label": "Review Date",
+          "info": "e.g. mm/dd/yyyy"
+        },
+        {
+          "type": "text",
+          "id": "review_content",
+          "label": "Review Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "review_image",
+          "label": "Icon"
+        },
+        {
+          "type": "range",
+          "id": "review_ratings",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "unit": "str",
+          "label": "Ratings",
+          "default": 1
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lifestyle Reviews (C)"
+    }
+  ]
+}
+{% endschema %}

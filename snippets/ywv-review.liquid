@@ -1,0 +1,66 @@
+<section class="review_content_section">
+    <div class="reviewOfProduct" style="background: {{ block.settings.quote_background }}; color: {{ block.settings.quote_text_color }}">
+      <div class="blockQuote">
+        “{{ block.settings.quote_content }}”
+      </div>
+      <span class="review_name">{{ block.settings.quote_name }}</span>
+    </div>
+  </section>
+  
+  <style>
+    .review_content_section{
+      position: relative;
+    }
+    .review_content_section .reviewOfProduct{
+      /* background: #fff;
+      padding: 15px;
+      border: 1px solid #fff;
+      height: auto;
+      box-shadow: 3px -1px 8px 0 rgb(162 162 162 / 20%), 0 4px 8px 0 rgb(120 120 120 / 19%);
+      margin-bottom: 23px;
+      margin-top: 20px;
+      border-radius: 7px;
+      transition: 0.6s all ease-in-out; */
+      height: auto;
+      transition: 0.6s all ease-in-out;
+      /* background: #FFECEC; */
+      border-radius: 33px;
+      padding: 30px 40px;
+      text-align: center;
+      margin: 0px 0 20px 0;
+    }
+    .review_content_section .blockQuote{
+      /* font-style: oblique;
+      padding: 0;
+      margin: 0;
+      letter-spacing: 2px;
+      color: #000;
+      word-break: break-word; */
+      /* font-family: var(--font-heading-family); */
+      padding: 0;
+      margin: 0;
+      letter-spacing: 1px;
+      color: #000;
+      word-break: break-word;
+      font-size: 20px;
+      line-height: 1.5;
+      width: 100%;
+      text-align: center;
+    }
+    .review_content_section .review_name{
+      /* letter-spacing: 1.47px;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      text-align: right;
+      margin: 8px 0 0; */
+      letter-spacing: 1px;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      margin: 3px 0 0;
+      text-align: center;
+      color: #000;
+    }
+  </style>
+

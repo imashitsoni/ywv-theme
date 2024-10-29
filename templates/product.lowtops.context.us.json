@@ -1,0 +1,27 @@
+{
+  "parent": "product.lowtops.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/1-min_29f71b00-7ac7-4f33-8a4c-7a64cec14feb.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/5-min_9480ac3d-8f2b-4d01-b0ec-29d6657507ab.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/8-min_1dd97016-9e1a-44ce-8ae7-bdd40e810fc0.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/9-min_ea3948f8-cbaa-4710-9040-f94d5440ed11.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/12-min.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/3-min_e488b582-099a-41bb-8907-ee648aace57c.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/10-min_6e209417-0cde-4906-be7d-7909ae1a9eae.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/6-min_735c6bfa-65bd-4ea0-9360-d2e11ea8f33f.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/11-min.webp"
+          }
+        }
+      }
+    }
+  }
+}

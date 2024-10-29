@@ -1,0 +1,27 @@
+{
+  "parent": "product.chunkysneakers.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/1-min_7de6d4f6-38a2-4fd2-8d1f-9b542703d107.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/2-min_b69cfd8b-e4dc-446e-9d03-48557f1a40bb.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/3-min_ca0a04e0-f99a-4db2-98ca-8508a9831e83.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/4-min_90d2b0c7-c36c-49b0-861d-dd9cde88c1c7.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/9-min_a50b0073-f259-4786-a215-660ab883a2f0.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/6_6e715931-9bec-45d3-836e-7232f1e8e457.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/7-min_68b00f6b-4b33-4495-8eac-f7bbc27c0245.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/8-min_d5709b60-3e3b-451e-9bd1-97c84e2e4986.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/5-min_b9623e8b-b93e-461c-b2d7-8f17c05d5d92.webp"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "product.wintersneakers.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/1_f544c835-b611-4a35-8240-c6b0cd050ea6.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/2_8caad17b-a827-4d36-a3b9-fe7c16537d0c.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/3_37bba738-3b9c-4a4a-8eb4-a93e02832012.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/4_79d697de-cb6c-43a9-ba1b-bb37042a6ab7.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/5.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/6_c9be71d8-43cf-41c9-ad65-2dfa0525fd0d.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/7.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/8.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/9.webp"
+          }
+        }
+      }
+    }
+  }
+}

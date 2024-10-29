@@ -1,0 +1,195 @@
+<section class="ywv-accordion-wrapper">
+  <div class="accordion-container">
+      <div class="accordion-item">
+          <button class="accordion-header">
+              Section 1
+              <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+              <p>Content for section 1.</p>
+          </div>
+          <div class="accordion-content-mobile">
+            <div class="mobile-content">
+              <p>Content for section 1 monbile.</p>
+          </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <button class="accordion-header">
+              Section 2
+              <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+              <p>Content for section 2.</p>
+          </div>
+        <div class="accordion-content-mobile">
+          <div class="mobile-content">
+              <p>Content for section 2 monbile.</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+ 
+      </div><button class="accordion-header">
+              Section 3
+              <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+              <p>Content for section 3.</p>
+          </div>
+        <div class="accordion-content-mobile">
+          <div class="mobile-content">
+              <p>Content for section 3 monbile.</p>
+        </div>
+        </div>
+      </div>
+     <div class="accordion-item">
+          <button class="accordion-header">
+              Section 1
+              <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+              <p>Content for section 4.</p>
+          </div>
+       <div class="accordion-content-mobile">
+         <div class="mobile-content">
+              <p>Content for section 4 monbile.</p>
+          </div>
+       </div>
+      </div>
+      <div class="accordion-item">
+          <button class="accordion-header">
+              Section 2
+              <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+              <p>Content for section 5.</p>
+          </div>
+        <div class="accordion-content-mobile">
+          <div class="mobile-content">
+              <p>Content for section 5 monbile.</p>
+          </div>
+        </div>
+      </div>
+    
+      
+    </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = window.innerWidth > 768 ? header.nextElementSibling : header.nextElementSibling.nextElementSibling;
+            const icon = header.querySelector('.icon');
+
+          if(window.innerWidth > 768){
+            // for desktop
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.textContent = '+'; // Show plus icon when collapsed
+                header.classList.remove('active');
+                content.style.font-weight === 'bold'
+            } else {
+                content.style.display = 'block';
+                icon.textContent = '-'; // Change icon to minus
+                header.classList.add('active');
+            }
+          } else {
+            // for mobile
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.textContent = '+'; // Show plus icon when collapsed
+                header.classList.remove('active');
+                content.style.font-weight === 'bold'
+            } else {
+                content.style.display = 'block';
+                icon.textContent = '-'; // Change icon to minus
+                header.classList.add('active');
+            }
+          }            
+        });
+    });
+});    
+</script>
+
+
+<style>
+    .ywv-accordion-wrapper .accordion-container {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+    .ywv-accordion-wrapper .accordion-header {
+        cursor: pointer;
+        padding: 15px 0px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        font-weight: normal;
+        border-top: 1px solid gray; 
+        /* border-top: none;  */
+      }
+    .ywv-accordion-wrapper .accordion-item:last-child{
+        border-bottom: 1px solid gray; 
+      }
+    .ywv-accordion-wrapper .accordion-header.active {
+        font-weight: bold;
+      } 
+    .ywv-accordion-wrapper .accordion-header .icon {
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+    .ywv-accordion-wrapper .accordion-content {
+        padding: 15px;
+        display: none;
+    }
+    .ywv-accordion-wrapper .accordion-content p {
+        margin: 0;
+    }
+    .ywv-accordion-wrapper .accordion-content-mobile {
+      display:none;
+    }
+
+    @media(max-width:768px){
+  .ywv-accordion-wrapper .accordion-content-mobile {
+    display:none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed !important;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    padding: 0;
+    padding: 20px;
+    scrollbar-width: thin;
+  }
+  .ywv-accordion-wrapper .accordion-content-mobile .mobile-content{
+    background-color: #fefefe;
+    max-width: 630px;
+    margin: auto;
+    padding-top: 35px !important;
+    padding-bottom: 25px;
+    position: relative;
+    font-family: 'Urbanist',sans-serif !important;
+    font-size: 14px;
+    top: 20%;
+  }
+  .ywv-accordion-wrapper .accordion-content {
+    display:none;
+  }
+    }
+
+</style>

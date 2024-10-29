@@ -1,0 +1,382 @@
+{%- if settings.product_size_enabled -%}
+<!-- Recently Viewed Items Section Start  -->
+<div id="mainproductsizeguide" class="mainproductsizeguide">
+    <a href="" class="showproductsize" id="showproductsize">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38.056" height="15.5" viewBox="0 0 38.056 15.5">
+            <g id="ruler_icon" data-name="ruler icon" transform="translate(-456 -825)">
+              <path id="Rectangle_138" data-name="Rectangle 138" d="M0,0H37.056a0,0,0,0,1,0,0V13.5a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V0A0,0,0,0,1,0,0Z" transform="translate(456.5 825.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+              <line id="Line_428" data-name="Line 428" y2="4.833" transform="translate(462.944 825.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+              <line id="Line_429" data-name="Line 429" y2="8.056" transform="translate(469.389 825.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+              <line id="Line_430" data-name="Line 430" y2="4.833" transform="translate(475.833 825.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+              <line id="Line_431" data-name="Line 431" y2="8.056" transform="translate(482.278 825.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+              <line id="Line_432" data-name="Line 432" y2="4.833" transform="translate(488.722 825.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+            </g>
+        </svg>
+        {{ block.settings.size_guide_title }}
+    </a>
+</div>
+
+<script>
+setTimeout(() => {
+    const showsizedisplay = document.getElementsByClassName('showproductsize');
+    const sizeclose = document.getElementsByClassName('sizeclose');
+    const sizeWomen = document.getElementsByClassName('sizewomenliclass');
+    const sizeMen = document.getElementsByClassName('sizemenliclass');
+    const prodsizeinch = document.getElementsByClassName('prodsizeinch');
+    const prodsizecm = document.getElementsByClassName('prodsizecm');
+    const prodsizechart = Array.from(document.querySelectorAll('.prodsizechart'));
+    const listsizeinchcm = Array.from(document.querySelectorAll('.listsizeinchcm'));
+    const showSizes = document.querySelector('#productsizemodal');    
+
+    if(showsizedisplay) {
+        showsizedisplay[0].addEventListener('click', function(e) { 
+            e.preventDefault();
+            showSizes.classList.add("show");
+        });
+    }
+    if(sizeclose) {
+        sizeclose[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            showSizes.classList.remove("show");
+        });
+    }
+  
+    if(sizeWomen.length > 0){
+        sizeWomen[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            sizeMen[0].classList.remove("active");
+            sizeWomen[0].classList.add("active");
+
+            prodsizechart.forEach( (prodsizeimg) => {
+                prodsizeimg.classList.remove('active');
+            });
+            listsizeinchcm.forEach( (itemcminch) => {
+                itemcminch.classList.remove('active');
+            });
+
+            prodsizechart[0].classList.add('active');
+            listsizeinchcm[0].classList.add('active');
+
+        });
+    }
+    if(sizeMen.length > 0){
+        sizeMen[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            sizeMen[0].classList.add("active");
+            sizeWomen[0].classList.remove("active");
+            
+            prodsizechart.forEach( (prodsizeimg) => {
+                prodsizeimg.classList.remove('active');
+            });
+            listsizeinchcm.forEach( (itemcminch) => {
+                itemcminch.classList.remove('active');
+            });
+
+            prodsizechart[2].classList.add('active');
+            listsizeinchcm[0].classList.add('active');
+        });
+    }
+    if(prodsizeinch.length > 0) {
+        prodsizeinch[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            const getActiveTab = document.querySelector('.select-gen-wrapper .active');   
+            const getActiveTabAttr = getActiveTab.getAttribute('data-sizetab');
+          
+            prodsizeinch[0].classList.add("active");
+            prodsizecm[0].classList.remove("active");
+            
+            prodsizechart.forEach( (prodsizeimg) => {
+                prodsizeimg.classList.remove('active');
+            });
+
+            if(getActiveTabAttr == 'varianttab1') {
+                const getActiveTabWoman = document.querySelector('#mainproductsizechartlist .prodsizewomeninch');  
+                getActiveTabWoman.classList.add('active');  
+            }else {
+                const getActiveTabWoman = document.querySelector('#mainproductsizechartlist .prodsizemeninch');  
+                getActiveTabWoman.classList.add('active');  
+            }
+        }); 
+    }
+    if(prodsizecm.length > 0) {
+        prodsizecm[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            const getActiveTab = document.querySelector('.select-gen-wrapper .active');   
+            const getActiveTabAttr = getActiveTab.getAttribute('data-sizetab');
+          
+            prodsizeinch[0].classList.remove("active");
+            prodsizecm[0].classList.add("active");
+
+            prodsizechart.forEach( (prodsizeimg) => {
+                prodsizeimg.classList.remove('active');
+            });
+
+            if(getActiveTabAttr == 'varianttab1') {
+                const getActiveTabWoman = document.querySelector('#mainproductsizechartlist .prodsizewomencm');  
+                getActiveTabWoman.classList.add('active');  
+            }else {
+                const getActiveTabWoman = document.querySelector('#mainproductsizechartlist .prodsizemencm');  
+                getActiveTabWoman.classList.add('active');  
+            }
+        });
+    }
+}, "2000");    
+</script>
+
+<style>
+#productsizemodal {
+    display: none;
+    position: fixed !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    top: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow-y: auto !important;
+    background-color: rgb(0,0,0) !important;
+    background-color: rgba(0,0,0,0.4) !important;
+    padding: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 999999999 !important;
+    scrollbar-width: thin;
+    align-items: center;
+    justify-content: center; 
+}
+#productsizemodal.show {
+    display: flex;
+}
+.ywv-modal-content_new {
+    padding: 0;
+    width: 100%;
+    position: relative;
+    max-width: 570px;
+    margin: auto;
+    padding-bottom: 15px;
+    border-radius: 0;
+    max-height: 90%;
+}
+.product-desk-wrapper {
+    max-height: 90vh;
+    overflow: auto;
+    background-color: #fff;
+}
+.sizechart-heading-2 h3 {
+    font-family: "Montserrat", sans-serif;  
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 4.32px;
+    margin-bottom: 25px;
+}
+#productsizemodal .sizeclose {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0 1px 6px rgba(157, 157, 157, 0.5);
+    color: #aaaaaa;
+    position: absolute;
+    top: -14px;
+    right: 16px;
+    z-index: 9999;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#productsizemodal .sizeclose img {
+    max-width: 100%;
+}
+#productsizemodal .select-gen-wrapper ul li a, #productsizemodal .select-measr ul li a {
+    font-family: "Montserrat", sans-serif;  
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+#productsizemodal .size-chart-wrapper {
+    padding: 50px 50px 0px 50px;
+}
+#productsizemodal .selectgender-measurment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#productsizemodal .selectgender-measurment ul {
+    list-style-type: none;
+    padding: 0px;
+    border-bottom: 1px solid #ccc;
+}
+#productsizemodal .selectgender-measurment ul li {
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+}
+#productsizemodal .selectgender-measurment ul li.sizewomenliclass {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#productsizemodal .selectgender-measurment ul li.active {
+    border-bottom: 3px solid #333 !important;
+}
+#productsizemodal .prodsizenav {
+    width: 50%;
+}
+#productsizemodal .select-gen-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+#productsizemodal .select-measr {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+#productsizemodal .prodsizechart {
+    display: none;
+}
+#productsizemodal .prodsizechart.active {
+    display: block;
+}
+#productsizemodal .prodsizechart img {
+    width: 100%;
+}
+#productsizemodal .size-chart-wrapper .table-wrapper {
+    height: max-content;
+    width: 100% !important;
+    height: max-content;
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    max-height: 500px;
+}
+a.showproductsize {
+    font-family: "Montserrat", sans-serif;  
+    text-decoration: underlined;
+    color: #000;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+}
+a.showproductsize:hover {
+    font-weight: 600;
+}
+a.showproductsize:hover svg path {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+.freesizeguide {
+    font-size: clamp(12px, calc(0.75rem + ((1vw - 7.68px) * 0.5208)), 18px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #000;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+.freesizeguide img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .product-desk-wrapper {
+    max-height: 94vh;
+    overflow: auto;
+  }
+  .ywv-modal-content_new {
+    max-width: 94%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #productsizemodal .size-chart-wrapper .table-wrapper {
+    max-height: 800px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .ywv-modal-content_new {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (min-device-width: 1280px) and (max-device-height:800px) {
+  #productsizemodal .size-chart-wrapper .table-wrapper {
+    max-height: 400px;
+  }
+}  
+@media only screen and (min-device-width:1024px) and (max-device-height:600px) {
+    #productsizemodal .size-chart-wrapper .table-wrapper {
+      max-height: 220px;
+    }
+} 
+@media only screen and (max-width: 992px) {
+  .ywv-modal-content_new {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #productsizemodal .size-chart-wrapper .table-wrapper {
+    max-height: 700px;
+  }
+  .sizechart-heading-2 h3 {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .ywv-modal-content_new {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .product-desk-wrapper {
+    max-height: 86vh;
+  }
+  .sizechart-heading-2 h3 {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  #productsizemodal .size-chart-wrapper {
+    padding: 40px 15px 0px 15px;
+  }
+  #productsizemodal .select-gen-wrapper ul li a, #productsizemodal .select-measr ul li a {
+    font-size: 14px;
+  }
+  #productsizemodal .selectgender-measurment ul li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #productsizemodal .selectgender-measurment ul li.womenliclass {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .freesizeguide img {
+    height: 50px;
+  }
+  .freesizeguide {
+    font-size: 11px;
+  }
+  #productsizemodal .size-chart-wrapper .table-wrapper {
+    max-height: 530px;
+  }
+  #productsizemodal .sizeclose {
+    right: 16px;
+  }
+}
+@media only screen and (min-device-width:768px) and (max-device-height:1024px) {
+  .freesizeguide {
+    font-size: 18px;
+  }
+}  
+</style>
+
+{%- endif -%}
+    

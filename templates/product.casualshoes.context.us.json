@@ -1,0 +1,27 @@
+{
+  "parent": "product.casualshoes.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "ywv_lifestyle_6nyBKW": {
+          "settings": {
+            "lifestyle_image1": "shopify:\/\/shop_images\/1-min_1d15fff2-dba3-49fe-99bb-921a4dbde7d4.webp",
+            "lifestyle_image2": "shopify:\/\/shop_images\/2-min_d375b958-f577-431d-a8c6-4593827e4d89.webp",
+            "lifestyle_image3": "shopify:\/\/shop_images\/3-min_545b15db-9be3-456f-9bc1-cd2d445e9144.webp",
+            "lifestyle_image4": "shopify:\/\/shop_images\/4-min_3347d4ca-78b1-43f4-9da5-8287746abc70.webp",
+            "lifestyle_image5": "shopify:\/\/shop_images\/9-min_8274cdcc-a632-465a-b36a-3fc2265e222d.webp",
+            "lifestyle_image6": "shopify:\/\/shop_images\/6-min_bba15003-3be9-42a1-85af-4f2cbf0c4cc0.webp",
+            "lifestyle_image7": "shopify:\/\/shop_images\/7-min_502f302d-4f33-4cf0-b1a7-c2feaf3b533e.webp",
+            "lifestyle_image8": "shopify:\/\/shop_images\/8-min_b90959ec-5974-4591-afdd-92b8953cf6a8.webp",
+            "lifestyle_image9": "shopify:\/\/shop_images\/5-min_236cab47-d2f9-4fee-bc05-90113b4119b0.webp"
+          }
+        }
+      }
+    }
+  }
+}

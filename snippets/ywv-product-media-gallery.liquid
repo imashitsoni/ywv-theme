@@ -1,0 +1,549 @@
+{% assign colorsOpts = '' %}
+{% assign colorsImgOpts = '' %}
+{% for variant in product.variants %}
+  {% assign image = variant.image | default: product.featured_image %}
+  {% if image %}
+    {% unless colorsOpts contains variant.option2 %}
+      {% if colorsOpts == '' %}
+        {% assign colorsOpts = variant.option2 %}
+        {% assign colorsImgOpts = image %}
+      {% else %}
+        {% assign colorsOpts = colorsOpts | append: ',' | append: variant.option2 %}
+        {% assign colorsImgOpts = colorsImgOpts | append: ',' | append: image %}
+      {% endif %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+<script type="application/json" data-color-variant-images>
+  {
+    "colorsOpts": {{ colorsOpts | json }},
+    "colorsImgOpts": {{ colorsImgOpts | json }}
+  }
+</script>
+
+{% assign styleOpts = '' %}
+{% assign styleImgOpts = '' %}
+{% for variant in product.variants %}
+  {% assign image = variant.image | default: product.featured_image %}
+  {% if image %}
+    {% unless styleOpts contains variant.option1 %}
+      {% if styleOpts == '' %}
+        {% assign styleOpts = variant.option1 %}
+        {% assign styleImgOpts = image %}
+      {% else %}
+        {% assign styleOpts = styleOpts | append: ',' | append: variant.option1 %}
+        {% assign styleImgOpts = styleImgOpts | append: ',' | append: image %}
+      {% endif %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+<script type="application/json" data-style-variant-images>
+  {
+    "styleOpts": {{ styleOpts | json }},
+    "styleImgOpts": {{ styleImgOpts | json }}
+  }
+</script>
+
+{% assign sizeOpts = '' %}
+{% assign sizeImgOpts = '' %}
+{% for variant in product.variants %}
+  {% assign image = variant.image | default: product.featured_image %}
+  {% if image %}
+    {% unless sizeOpts contains variant.option3 %}
+      {% if sizeOpts == '' %}
+        {% assign sizeOpts = variant.option3 %}
+        {% assign sizeImgOpts = image %}
+      {% else %}
+        {% assign sizeOpts = sizeOpts | append: ',' | append: variant.option3 %}
+        {% assign sizeImgOpts = sizeImgOpts | append: ',' | append: image %}
+      {% endif %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+<script type="application/json" data-size-variant-images>
+  {
+      "sizeOpts": {{ sizeOpts | json }},
+      "sizeImgOpts": {{ sizeImgOpts | json }}
+  }
+</script>
+
+<div class="product-gallery">
+  <!-- Featured Image -->
+  {% assign featured_image =  product.selected_or_first_available_variant.featured_media %}
+  {% if featured_image %}
+    <div class="product-gallery__featured slider-item" data-id="ywvproditemimg0">
+      <img src="{{ featured_image | img_url: '' }}" alt="{{ product.title }}"  data-id="ywvproditemimg0" class="prodimg owl-lazy"> 
+    </div>
+  {% endif %}
+  
+  <!-- Two-Column Gallery of Variant Images -->
+  	<div class="product-gallery__grid">
+		{% assign imgcounter = 1 %}
+		{% for media in product.media %}
+			{% assign image = media.preview_image | default: product.featured_image %}
+			{% if image %}
+			<div class="product-gallery__item slider-item" data-title="{{ product.title }}" data-src="{{ image  }}" data-id="ywvproditemimg{{ imgcounter }}">
+				<img src="{{ image | img_url: '' }}" alt="{{ image.alt | escape }}" data-id="ywvproditemimg{{ imgcounter }}" class="prodimg owl-lazy">
+			</div>
+			{% endif %}
+
+			{% assign imgcounter = imgcounter | plus:1 %}
+
+		{% endfor %}
+  	</div>
+</div>
+<div id="page" class="site file-products">
+	<div id="content" class="site-content">
+		<div class="product-popup" style="display:none;">
+			<div class="prowrapperpopup">
+				<span class="closeproduct"><img src="{{ 'crossicon.png' | asset_url }}"></span>
+				<div id="optowlimageitemlist" class="propopup product-img-carousel owl-carousel owl-theme">
+				</div>
+			</div>
+		</div>
+		<div id="mobileshopgallery" class="product-page-wrapper container product-template-new">
+			<div class="product-image-section product-section">
+				<div class="product-gallery">
+				   	<div class="slider_mobile_images">
+					  	<div id="moboptowlimageitemlist" class="product-img-carousel carousel_2 owl-carousel owl-theme all_image_manage" >
+						</div>
+					</div>
+					<div class="mobile-outsole-color">
+						<div class="option-color option-section">
+							{% comment %} <variant-selects>
+								<fieldset id="mobitemcolors" class="js product-form__input product-form__input--pill"></fieldset>
+							</variant-selects> {% endcomment %}
+						</div>
+					</div>
+					<div id="mobsliderprodimage" class="slider-product-img-carousel-wrap mob-thumb-slider">
+						<div class="custom_text_center"></div>
+						<div id="moboptowlimageitemlistthumb" class="slider-product-img-carousel carouselsmall_2 all_image_manage">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+.hide-img {
+	display: none;
+}
+.product-gallery {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.product-gallery__featured {
+	width: 100%;
+	text-align: center;
+}
+.product-gallery__featured img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.product-gallery__grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+.product-gallery__item {
+	flex: 1 1 calc(50% - 16px);
+	box-sizing: border-box;
+	text-align: center;
+}
+.product-gallery__item img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.product-gallery__title {
+	margin: 8px 0;
+	font-size: 16px;
+}
+.product-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000078;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+.product-popup .owl-dots {
+    display: block !important;
+}
+.product-popup .owl-dots {
+    display: block !important;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.product-popup .owl-stage-outer {
+    height: auto;
+}
+.product-popup  .owl-item {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.prowrapperpopup {
+    position: relative;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    background-color: #fff;
+}
+.prowrapperpopup .prodimg {
+	max-width: unset;
+}  
+.closeproduct {
+    position: absolute;
+    top: -14px;
+    right: 16px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0 1px 6px rgba(157, 157, 157, 0.5);
+    box-sizing: border-box;
+} 
+.closeproduct img {
+    width: 100%;
+}
+.closeproduct:hover, .closeproduct:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    background: #F1F1F1;
+}
+.product-popup .product-img-carousel.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    margin: auto;
+    background: #fff;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.product-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000078;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-popup .owl-item {
+    height: max-content !important;
+}
+.closeproduct {
+    position: absolute;
+    top: -14px;
+    right: 16px;
+    z-index: 999;
+}
+.zoomimg.owl-lazy {
+    display: none !important;
+}
+.product-gallery .owl-nav {
+    display: none !important;
+}
+.product-img-carousel .item {
+    cursor: pointer;
+}
+.product-popup .owl-nav {
+    position: absolute;
+    top: calc(50% - 20px);
+}
+.product-popup .owl-dots {
+    display: block !important;
+}
+.product-popup .owl-dots {
+    display: block !important;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.product-popup .owl-stage-outer {
+    height: auto;
+}
+.product-popup  .owl-item {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.prowrapperpopup {
+    position: relative;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+}
+.product-popup .owl-nav {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 100%;
+}
+.product-img-carousel .owl-nav {
+    font-size: 75px;
+}
+.product-img-carousel .owl-nav button.owl-prev:after {
+    transform: translate(25px, -50%);
+    position:absolute;
+    content:"\f053";
+    font-family:"FontAwesome";
+    font-size:75px;
+    line-height:1em;
+    left:0;
+    right:auto;
+    margin:0 auto;
+    top:50%;
+}
+.product-img-carousel .owl-nav button.owl-next:after {
+    transform: translate(-25px, -50%);
+    content:"\f054";
+    position:absolute;
+    font-family:"FontAwesome";
+    font-size:75px;
+    line-height:1em;
+    right:0;
+    left:auto;
+    margin:0 auto;
+    top:50%;
+}
+.product-img-carousel .owl-nav button.owl-next span, 
+.product-img-carousel .owl-nav button.owl-prev span, 
+.recently-viewed-products .owl-nav button.owl-next span, 
+.recently-viewed-products .owl-nav button.owl-prev span, 
+.slider-product-img-carousel .owl-nav button.owl-next span, 
+.slider-product-img-carousel .owl-nav button.owl-prev span {
+  display: none;
+}
+.owl-carousel {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+#mainprodslider .owl-carousel {
+    z-index: 0 !important; 
+}
+.owl-carousel .owl-item img{
+    display:block;
+    max-width: 900px;
+    max-height: 75vh;
+}
+#mainprodslider .owl-nav {
+  position: absolute;
+  top: calc(50% - 33px);
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 50px;
+  opacity: 0;
+  transition: opacity .25s linear;
+  height: 0;
+  color: #666;
+}
+.product-img-carousel:hover .owl-nav {
+  opacity: 1;
+}
+#mainprodslider .owl-dot.active span {
+  background: #000 !important;
+}
+#mainprodslider .product-img-carousel .owl-dot span {
+  width: 9px;
+  height: 9px;
+  margin: 5px 4px;
+}
+#mainprodslider .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}
+.product-img-carousel.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    padding-bottom: 40px;
+}
+.product-img-carousel.owl-carousel.owl-theme.owl-loaded.owl-drag .owl-dots {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    max-width: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    z-index: 99;
+}
+#moboptowlimageitemlist .owl-dots {
+	bottom: 0px;
+	transform: translate(50%, -50%);
+}
+#mobsliderprodimage {
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+}
+.product-gallery {
+    position: relative;
+}
+.slider-product-img-carousel-wrap .owl-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#mobsliderprodimage .owl-stage-outer {
+  position: relative;
+  overflow: hidden !important;
+  z-index: 999;
+}
+#mobsliderprodimage .slider-product-img-carousel .slider-item img{
+    width: 100%;
+}
+#mobsliderprodimage .owl-nav {
+    display: flex !important;
+    opacity: 1;
+}
+#mobsliderprodimage .owl-nav button img {
+    display: none;
+}
+#mobsliderprodimage .owl-nav {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+#mobsliderprodimage .owl-nav button.owl-prev,
+#mobsliderprodimage .owl-nav button.owl-next {
+    border: 0px;
+    background-color: transparent;
+}
+#mobsliderprodimage .owl-nav button.owl-prev::after {
+    transform: translate(25px, -50%);
+    position:absolute;
+    content:"\f053";
+    font-family:"FontAwesome";
+    font-size:16px;
+    line-height:1em;
+    left:-40px;
+    right:auto;
+    margin:0 auto;
+    opacity: 1;
+    color: #8c8c8c !important;
+}
+#mobsliderprodimage .owl-nav button.owl-next::after {
+    transform: translate(-25px, -50%);
+    content:"\f054";
+    position:absolute;
+    font-family:"FontAwesome";
+    font-size: 16px;
+    line-height:1em;
+    right:-40px;
+    left:auto;
+    margin:0 auto;
+    opacity: 1;
+    color: #8c8c8c !important;
+}
+#mobsliderprodimage .slider-item {
+    margin: 0 6px;
+    opacity: .7;
+    cursor: pointer;
+}
+#mobsliderprodimage .slider-item.active {
+  opacity: 1;
+}
+#mobsliderprodimage .slider-product-img-carousel {
+    position: relative;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.product-img-carousel .owl-dot span {
+    width: 9px;
+    height: 9px;
+    margin: 5px 4px;
+    background: #d6d6d6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 50% !important;
+}
+.owl-dot.active span {
+    background: #000 !important;
+}   
+.prodimg {
+   position: relative;
+   z-index: 0;
+   max-width: 100%;
+}
+.product-img-carousel .owl-nav button.owl-prev:after {
+   transform: translate(25px, -50%);
+}
+.product-img-carousel .owl-nav button.owl-next:after {
+   transform: translate(-25px, -50%);
+}
+#mobileshopgallery {
+	display:none;
+}
+#mobileshopgallery .owl-carousel .owl-item.active .owl-lazy {
+	opacity: 1;
+}
+@media only screen and (max-width: 1200px) {
+	
+}
+
+@media only screen and (max-width: 992px) {
+   
+}
+
+@media only screen and (max-width : 768px) {
+	.product-popup, .product-gallery {
+		display: none !important;
+	}
+	#mobileshopgallery, #mobileshopgallery .product-gallery {
+		display:block !important;
+	}
+}
+
+</style>
