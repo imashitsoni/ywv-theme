@@ -1,1 +1,826 @@
-{"sections":{"image_banner":{"type":"image-banner","settings":{"image":"shopify:\/\/shop_images\/ShopifyThemeBanner-2-6_1_15ccddf7-3e3f-434c-a6fd-358b30ad1326.jpg","mobileimage_banner":"shopify:\/\/shop_images\/Mobile_ff724ac2-1107-46b8-9cea-2a7ee435ac47.jpg","redirectionlink":"https:\/\/onemilllionmonth.myshopify.com\/collections\/wintervibesneakers","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-1","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"collection_list_de4VGL":{"type":"collection-list","blocks":{"featured_collection_4LbDK9":{"type":"featured_collection","settings":{"collection":"sneakers"}},"featured_collection_WGBhWz":{"type":"featured_collection","settings":{"collection":"hoodedblankets"}},"featured_collection_j4k7X7":{"type":"featured_collection","settings":{"collection":"wintervibesneakers"}},"featured_collection_Yb7n9q":{"type":"featured_collection","settings":{"collection":"boots"}}},"block_order":["featured_collection_4LbDK9","featured_collection_WGBhWz","featured_collection_j4k7X7","featured_collection_Yb7n9q"],"settings":{"title":"<strong>Shop By Collection<\/strong>","heading_size":"h1","image_ratio":"square","columns_desktop":4,"color_scheme":"","show_view_all":false,"columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"multicolumn_mGKxPp":{"type":"multicolumn","blocks":{"column_VBpzXa":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/purple_sky_and_fir.png","title":"<a href=\"\/products\/purple-sky-and-fir-4\" title=\"Purple Sky And Fir\">Purple Sky And Fir<\/a>","text":"","link_label":"","link":"shopify:\/\/products\/purple-sky-and-fir-4"}},"column_a3jy7t":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/melted_crayon.png","title":"<a href=\"\/products\/sneakers-meltedcrayonrainbow01596\" title=\"Melted Crayon Rainbow\">Melted Crayon<\/a>","text":"","link_label":"","link":"shopify:\/\/products\/sneakers-meltedcrayonrainbow01596"}},"column_MhmMxX":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/image_2024_09_03T12_03_23_890Z.png","title":"<a href=\"\/products\/yin-yang-mandala-sneakers\" title=\"Yin Yang Mandala\">Yin Yang Mandala<\/a>","text":"","link_label":"","link":"shopify:\/\/products\/yin-yang-mandala-sneakers"}},"column_rJr3tw":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Dripping_Fluo_Lava.png","title":"<a href=\"\/products\/sneakers-drippingfluolava00923\" title=\"Dripping Fluo Lava\">Dripping Fluo Lava<\/a>","text":"","link_label":"","link":"shopify:\/\/products\/sneakers-drippingfluolava00923"}}},"block_order":["column_VBpzXa","column_a3jy7t","column_MhmMxX","column_rJr3tw"],"settings":{"title":"<strong>Trending Now<\/strong>","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"center","background_style":"none","button_label":"","button_link":"shopify:\/\/collections\/sneakers","color_scheme":"","columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"collection_list_84Mxdx":{"type":"collection-list","blocks":{"featured_collection_Pyy7qH":{"type":"featured_collection","settings":{"collection":"ws"}},"featured_collection_HdkJRX":{"type":"featured_collection","settings":{"collection":"cb"}},"featured_collection_JqgCmt":{"type":"featured_collection","settings":{"collection":"cwb"}},"featured_collection_jB7hn8":{"type":"featured_collection","settings":{"collection":"boots-1"}},"featured_collection_yqCqif":{"type":"featured_collection","settings":{"collection":"pb"}},"featured_collection_BAPj6g":{"type":"featured_collection","settings":{"collection":"nb"}},"featured_collection_GhPbXy":{"type":"featured_collection","settings":{"collection":"cb-1"}},"featured_collection_q6egcG":{"type":"featured_collection","settings":{"collection":"ob"}}},"block_order":["featured_collection_Pyy7qH","featured_collection_HdkJRX","featured_collection_JqgCmt","featured_collection_jB7hn8","featured_collection_yqCqif","featured_collection_BAPj6g","featured_collection_GhPbXy","featured_collection_q6egcG"],"settings":{"title":"<strong>Winter Footwear<\/strong>","heading_size":"h1","image_ratio":"adapt","columns_desktop":4,"color_scheme":"","show_view_all":false,"columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":4}},"collection_list_qhp6Ea":{"type":"collection-list","blocks":{"featured_collection_cnnKax":{"type":"featured_collection","settings":{"collection":"shirt"}},"featured_collection_kjYCHb":{"type":"featured_collection","settings":{"collection":"hooded-blankets-1"}},"featured_collection_69Dqjn":{"type":"featured_collection","settings":{"collection":"hoodie-vibe-dress"}},"featured_collection_gdApdg":{"type":"featured_collection","settings":{"collection":"leggings"}}},"block_order":["featured_collection_cnnKax","featured_collection_kjYCHb","featured_collection_69Dqjn","featured_collection_gdApdg"],"disabled":true,"settings":{"title":"APPAREL","heading_size":"h1","image_ratio":"adapt","columns_desktop":4,"color_scheme":"","show_view_all":false,"columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"multicolumn_qGQPNa":{"type":"multicolumn","blocks":{"column_XwB7wA":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Peace_And_Love.webp","title":"<a href=\"\/products\/peace-and-love-39\" title=\"Peace And Love\">Peace And Love<\/a>","text":"","link_label":"","link":"shopify:\/\/products\/peace-and-love-39"}},"column_WVfHmd":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Psychedelic_Peace_And_Love.webp","title":"<a href=\"\/products\/sneakers-psychedelicpeaceandlove\" title=\"Psychedelic Peace And Love\">Psychedelic Peace And Love<\/a>","text":"","link_label":"","link":"shopify:\/\/products\/sneakers-psychedelicpeaceandlove"}},"column_3BATxQ":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Rainbow_Weave.webp","title":"<a href=\"\/products\/abstract-flag\" title=\"Abstract Flag\">Abstract Flag<\/a>","text":"","link_label":"","link":"shopify:\/\/products\/abstract-flag"}},"column_AXEbLK":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Watercolor_Flowers.webp","title":"<a href=\"\/products\/sneakers-watercolorflowers\" title=\"Watercolor Flowers\">Watercolor Flowers<\/a>","text":"","link_label":"","link":"shopify:\/\/products\/sneakers-watercolorflowers"}}},"block_order":["column_XwB7wA","column_WVfHmd","column_3BATxQ","column_AXEbLK"],"settings":{"title":"Best Selling Sneakers","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"left","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"multicolumn_Hhq8kd":{"type":"multicolumn","blocks":{"column_ribhtB":{"type":"column","settings":{"title":"PEACE AND LOVE WATERCOLOR","text":"","link_label":"","link":"shopify:\/\/products\/sneakers-abstracttropicswhite01654"}},"column_CjGXgA":{"type":"column","settings":{"title":"HIPPIE VAN PEACE","text":"","link_label":"","link":"shopify:\/\/products\/sneakers-99009900267"}},"column_GpKyea":{"type":"column","settings":{"title":"PEACE AND BUTTERFLIES","text":"","link_label":"","link":"shopify:\/\/products\/activesneakers-001green00345"}}},"block_order":["column_ribhtB","column_CjGXgA","column_GpKyea"],"disabled":true,"settings":{"title":"WORLD PEACE","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"featured_collection_qJQexh":{"type":"featured-collection","disabled":true,"settings":{"title":"<strong>Best Selling Sneakers<\/strong>","heading_size":"h1","description":"","show_description":false,"description_style":"body","collection":"sneakers","products_to_show":4,"columns_desktop":4,"full_width":false,"show_view_all":false,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"image_with_text_RyArw3":{"type":"image-with-text","blocks":{"heading_Dq7dAX":{"type":"heading","settings":{"heading":"Sarah M.","heading_size":"h1"}},"text_GLfVMa":{"type":"text","settings":{"text":"<h2>\"I’m obsessed with these shoes! I already own another pair in a different color, and they never fail to impress. Everywhere I go, people stop to ask where I got them, and I proudly say Yes We Vibe! These shoes are not just stylish but also a true conversation starter. Highly recommend!\"<\/h2>","text_style":"body"}},"button_jfMLiy":{"type":"button","disabled":true,"settings":{"button_label":"Button label","button_link":"shopify:\/\/collections\/sneakers","button_style_secondary":false}}},"block_order":["heading_Dq7dAX","text_GLfVMa","button_jfMLiy"],"settings":{"image":"shopify:\/\/shop_images\/Sarah-M..gif","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"","color_scheme":"","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"17237124794863e438":{"type":"apps","settings":{"include_margins":true}},"multicolumn_cymbKg":{"type":"multicolumn","blocks":{"column_Gxrtrq":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/1-250x250.webp","title":"FREE Size Replacement","text":"","link_label":"","link":""}},"column_faxUMH":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/2-250x250.webp","title":"Vegan And Cruelty-Free","text":"","link_label":"","link":""}},"column_HNMYAc":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/3-250x250.webp","title":"Good Vibes Guarantee","text":"","link_label":"","link":""}},"column_xpq9mh":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/4-250x250.webp","title":"Over 250k Happy Customers","text":"","link_label":"","link":""}},"column_H73VnV":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/5-250x250.webp","title":"1.5M Followers","text":"","link_label":"","link":""}}},"block_order":["column_Gxrtrq","column_faxUMH","column_HNMYAc","column_xpq9mh","column_H73VnV"],"settings":{"title":"","heading_size":"h0","image_width":"half","image_ratio":"square","columns_desktop":5,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":true,"padding_top":4,"padding_bottom":44}},"ywv_lifestyle_reviews_GJyiKy":{"type":"ywv-lifestyle-reviews","blocks":{"repeater_block_38U6Bi":{"type":"repeater_block","settings":{"customer_name":"Margaret P.","review_date":"06\/27\/2024","review_content":"Just arrived today (after a very short time from ordering). Tried them on: very comfortable, solid, thick sole, padded beneath the ankle and around the foot. Just waiting to actually wear them but I suspect there will be no surprises. Very happy with my (2nd!) purchase.","review_image":"shopify:\/\/shop_images\/8_9976deee-5439-4794-bb33-1b2d7d26f42c.jpg","review_ratings":5}},"repeater_block_ykMGCa":{"type":"repeater_block","settings":{"customer_name":"Lori G.","review_date":"07\/26\/2024","review_content":"These boots bring me joy. I am going to be cute and cool for this year at school!","review_image":"shopify:\/\/shop_images\/2_8fc1507d-b1bc-413b-9c24-2f3851fcab7e.jpg","review_ratings":4}},"repeater_block_ndriEN":{"type":"repeater_block","settings":{"customer_name":"Justin M.","review_date":"07\/08\/2024","review_content":"These came in my second order. Totaling 4 pairs now. These are my favorite. Keep vibing","review_image":"shopify:\/\/shop_images\/3_60ec1098-01ae-40a3-992e-43e6699c51bd.jpg","review_ratings":5}},"repeater_block_w67hUf":{"type":"repeater_block","settings":{"customer_name":"Christopher B.","review_date":"07\/07\/2024","review_content":"These shoes regularly attract comments. They are comfortable right from the first wearing and great to walk in. And the white sole makes them look even lighter and brighter!","review_image":"shopify:\/\/shop_images\/4_3cd65e39-690b-490d-89fb-ad68bc5fc265.jpg","review_ratings":5}},"repeater_block_6rpDrM":{"type":"repeater_block","settings":{"customer_name":"Kim C.","review_date":"03\/29\/2024","review_content":"Very good communication, pretty quick delivery, and great shoes. Now have 4 pairs. Comfortable and can fit my orthotics in too.","review_image":"shopify:\/\/shop_images\/12.png","review_ratings":5}},"repeater_block_tgt6d3":{"type":"repeater_block","settings":{"customer_name":"Tatiana B.","review_date":"04\/25\/2024","review_content":"Totally in love with my new chunky sneakers ❤️ So fancy, original, specific and fantastic. Very light weight , easy to walk and wear all day 😍","review_image":"shopify:\/\/shop_images\/11_ce308a80-5273-49ea-af7e-b56b909697bd.jpg","review_ratings":5}},"repeater_block_wTEhgf":{"type":"repeater_block","settings":{"customer_name":"Ken C.","review_date":"06\/23\/2024","review_content":"Absolutely LOVE my sneakers! They're comfortable and beautiful. and I've been getting compliments from everyone who see them. The process for buying\/shipping couldn't have been easier. Definitely will be making another order soon! :)","review_image":"shopify:\/\/shop_images\/9_a70e0496-0c99-4596-9ae0-4fb4ed804152.jpg","review_ratings":5}},"repeater_block_kRMaDD":{"type":"repeater_block","settings":{"customer_name":"Brandon W.","review_date":"06\/30\/2024","review_content":"Great fit !Great got them they look and fit fantastic. However they smell really strong of chemicals that’s concerning","review_image":"shopify:\/\/shop_images\/6.png","review_ratings":5}},"repeater_block_J6npyd":{"type":"repeater_block","settings":{"customer_name":"Peter D.","review_date":"09\/20\/2023","review_content":"Good size, nice quality, awesome packing.","review_image":"shopify:\/\/shop_images\/20.jpg","review_ratings":5}},"repeater_block_bCz4rA":{"type":"repeater_block","settings":{"customer_name":"Mandi R.","review_date":"02\/28\/2024","review_content":"Cute shoes, sizing was accurate and I had a problem with getting my order and customer service was very helpful and resent my order.","review_image":"shopify:\/\/shop_images\/13_82323189-d686-4299-b0fa-46620a0c5b23.jpg","review_ratings":5}},"repeater_block_fdEcBa":{"type":"repeater_block","settings":{"customer_name":"Kristina A.","review_date":"11\/18\/2023","review_content":"Well-made, comfortable, and fit perfectly. Once again, I’m very pleased with my purchase from Yes, We Vibe. The 2-for-1 deal is an added plus!","review_image":"shopify:\/\/shop_images\/16.jpg","review_ratings":5}},"repeater_block_tUJeGU":{"type":"repeater_block","settings":{"customer_name":"Masahiro M.","review_date":"10\/30\/2023","review_content":"For me the product I purchased is the bestI loved both the design and the comfort of the shoes. Now I will repeat another product.","review_image":"shopify:\/\/shop_images\/17_b6f44fa2-c96f-47fa-80f4-52b4fa3f9938.png","review_ratings":5}},"repeater_block_9VG4Wp":{"type":"repeater_block","settings":{"customer_name":"Dan O.","review_date":"10\/28\/2023","review_content":"I ordered some slippers about 5 years ago and was very happy with their warmth and durability They never came apart at the seams like most. I ordered some more here recently and I’m very pleased with them as well.","review_image":"shopify:\/\/shop_images\/18.jpg","review_ratings":1}},"repeater_block_9kQgtp":{"type":"repeater_block","settings":{"customer_name":"Jo D.","review_date":"09\/03\/2023","review_content":"Hands down the best boots I’ve ever owned Fantastic fit and soooo comfortable","review_image":"shopify:\/\/shop_images\/23.jpg","review_ratings":5}},"repeater_block_G8MDRw":{"type":"repeater_block","settings":{"customer_name":"Julie C.","review_date":"05\/29\/2023","review_content":"This is the second pair of this pattern that I've bought--I've worn out the first pair! Love your shoes!!","review_image":"shopify:\/\/shop_images\/28.jpg","review_ratings":5}},"repeater_block_gnzB6q":{"type":"repeater_block","settings":{"customer_name":"Emilee A.","review_date":"04\/11\/2024","review_content":"This is so popular in our house, it’s hard to get dibs on it… looks like we need to order another, and with buy one get one, why wait!","review_image":"shopify:\/\/shop_images\/36.jpg","review_ratings":5}},"repeater_block_Tbny43":{"type":"repeater_block","settings":{"customer_name":"Jackie W.","review_date":"02\/13\/2023","review_content":"I love these shoes! Super comfortable and I get so many compliments about them from friends and strangers alike","review_image":"shopify:\/\/shop_images\/39.jpg","review_ratings":5}},"repeater_block_qLwRVF":{"type":"repeater_block","settings":{"customer_name":"Jackie B.","review_date":"07\/02\/2024","review_content":"Thank you so much for provide a pair of boots that are of a high quality. The design is perfect and they are so comfortable. I’m wearing them now. Will definitely come back to your site ❤️","review_image":"shopify:\/\/shop_images\/25.jpg","review_ratings":5}},"repeater_block_kyqWLi":{"type":"repeater_block","settings":{"customer_name":"Mehmet G.","review_date":"09\/03\/2023","review_content":"Good vibes, indeed. Came in a great, professional package!","review_image":"shopify:\/\/shop_images\/24.jpg","review_ratings":5}},"repeater_block_Q8nkUw":{"type":"repeater_block","settings":{"customer_name":"Pamela M.","review_date":"04\/27\/2023","review_content":"These shoes are perfectly comfortable for lounging around the house and because of the vibrant colors, they match all of my jammies. I know what I'm buying as Christmas gifts this year!","review_image":"shopify:\/\/shop_images\/33.jpg","review_ratings":5}}},"block_order":["repeater_block_38U6Bi","repeater_block_ykMGCa","repeater_block_ndriEN","repeater_block_w67hUf","repeater_block_6rpDrM","repeater_block_tgt6d3","repeater_block_wTEhgf","repeater_block_kRMaDD","repeater_block_J6npyd","repeater_block_bCz4rA","repeater_block_fdEcBa","repeater_block_tUJeGU","repeater_block_9VG4Wp","repeater_block_9kQgtp","repeater_block_G8MDRw","repeater_block_gnzB6q","repeater_block_Tbny43","repeater_block_qLwRVF","repeater_block_kyqWLi","repeater_block_Q8nkUw"],"settings":{"heading":"Happy Customers!"}},"1724142884acd47da8":{"type":"apps","blocks":{"stamped_product_reviews_ugc_instagram_feed_ACQrTi":{"type":"shopify:\/\/apps\/stamped-reviews\/blocks\/instagram-feed\/a103faaf-2125-4b0e-89fa-de5149736723","settings":{"feed_type":"carousel","color_hover":"","hover_text":"","shop_button_text":"","auto_play":true,"review_ids":"","product_ids":"","category":"","product_brand":"","tags":"","min_rating":"4","fill_empty":false,"random":false,"with_photos":true}}},"block_order":["stamped_product_reviews_ugc_instagram_feed_ACQrTi"],"disabled":true,"settings":{"include_margins":true}}},"order":["image_banner","collection_list_de4VGL","multicolumn_mGKxPp","collection_list_84Mxdx","collection_list_qhp6Ea","multicolumn_qGQPNa","multicolumn_Hhq8kd","featured_collection_qJQexh","image_with_text_RyArw3","17237124794863e438","multicolumn_cymbKg","ywv_lifestyle_reviews_GJyiKy","1724142884acd47da8"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/test-banner.jpg",
+        "mobileimage_banner": "shopify://shop_images/Mobile_ff724ac2-1107-46b8-9cea-2a7ee435ac47.jpg",
+        "redirectionlink": "https://onemilllionmonth.myshopify.com/collections/wintervibesneakers",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "collection_list_de4VGL": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_4LbDK9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sneakers"
+          }
+        },
+        "featured_collection_WGBhWz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoodedblankets"
+          }
+        },
+        "featured_collection_j4k7X7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wintervibesneakers"
+          }
+        },
+        "featured_collection_Yb7n9q": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boots"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_4LbDK9",
+        "featured_collection_WGBhWz",
+        "featured_collection_j4k7X7",
+        "featured_collection_Yb7n9q"
+      ],
+      "settings": {
+        "title": "<strong>Shop By Collection</strong>",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_mGKxPp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_VBpzXa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/purple_sky_and_fir.png",
+            "title": "<a href=\"/products/purple-sky-and-fir-4\" title=\"Purple Sky And Fir\">Purple Sky And Fir</a>",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/purple-sky-and-fir-4"
+          }
+        },
+        "column_a3jy7t": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/melted_crayon.png",
+            "title": "<a href=\"/products/sneakers-meltedcrayonrainbow01596\" title=\"Melted Crayon Rainbow\">Melted Crayon</a>",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/sneakers-meltedcrayonrainbow01596"
+          }
+        },
+        "column_MhmMxX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/image_2024_09_03T12_03_23_890Z.png",
+            "title": "<a href=\"/products/yin-yang-mandala-sneakers\" title=\"Yin Yang Mandala\">Yin Yang Mandala</a>",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/yin-yang-mandala-sneakers"
+          }
+        },
+        "column_rJr3tw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Dripping_Fluo_Lava.png",
+            "title": "<a href=\"/products/sneakers-drippingfluolava00923\" title=\"Dripping Fluo Lava\">Dripping Fluo Lava</a>",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/sneakers-drippingfluolava00923"
+          }
+        }
+      },
+      "block_order": [
+        "column_VBpzXa",
+        "column_a3jy7t",
+        "column_MhmMxX",
+        "column_rJr3tw"
+      ],
+      "settings": {
+        "title": "<strong>Trending Now</strong>",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "shopify://collections/sneakers",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_84Mxdx": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Pyy7qH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ws"
+          }
+        },
+        "featured_collection_HdkJRX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cb"
+          }
+        },
+        "featured_collection_JqgCmt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cwb"
+          }
+        },
+        "featured_collection_jB7hn8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boots-1"
+          }
+        },
+        "featured_collection_yqCqif": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pb"
+          }
+        },
+        "featured_collection_BAPj6g": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nb"
+          }
+        },
+        "featured_collection_GhPbXy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cb-1"
+          }
+        },
+        "featured_collection_q6egcG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ob"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Pyy7qH",
+        "featured_collection_HdkJRX",
+        "featured_collection_JqgCmt",
+        "featured_collection_jB7hn8",
+        "featured_collection_yqCqif",
+        "featured_collection_BAPj6g",
+        "featured_collection_GhPbXy",
+        "featured_collection_q6egcG"
+      ],
+      "settings": {
+        "title": "<strong>Winter Footwear</strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 4
+      }
+    },
+    "collection_list_qhp6Ea": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_cnnKax": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shirt"
+          }
+        },
+        "featured_collection_kjYCHb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hooded-blankets-1"
+          }
+        },
+        "featured_collection_69Dqjn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoodie-vibe-dress"
+          }
+        },
+        "featured_collection_gdApdg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leggings"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_cnnKax",
+        "featured_collection_kjYCHb",
+        "featured_collection_69Dqjn",
+        "featured_collection_gdApdg"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "APPAREL",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_qGQPNa": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XwB7wA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Peace_And_Love.webp",
+            "title": "<a href=\"/products/peace-and-love-39\" title=\"Peace And Love\">Peace And Love</a>",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/peace-and-love-39"
+          }
+        },
+        "column_WVfHmd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Psychedelic_Peace_And_Love.webp",
+            "title": "<a href=\"/products/sneakers-psychedelicpeaceandlove\" title=\"Psychedelic Peace And Love\">Psychedelic Peace And Love</a>",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/sneakers-psychedelicpeaceandlove"
+          }
+        },
+        "column_3BATxQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rainbow_Weave.webp",
+            "title": "<a href=\"/products/abstract-flag\" title=\"Abstract Flag\">Abstract Flag</a>",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/abstract-flag"
+          }
+        },
+        "column_AXEbLK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Watercolor_Flowers.webp",
+            "title": "<a href=\"/products/sneakers-watercolorflowers\" title=\"Watercolor Flowers\">Watercolor Flowers</a>",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/sneakers-watercolorflowers"
+          }
+        }
+      },
+      "block_order": [
+        "column_XwB7wA",
+        "column_WVfHmd",
+        "column_3BATxQ",
+        "column_AXEbLK"
+      ],
+      "settings": {
+        "title": "Best Selling Sneakers",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_Hhq8kd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ribhtB": {
+          "type": "column",
+          "settings": {
+            "title": "PEACE AND LOVE WATERCOLOR",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/sneakers-abstracttropicswhite01654"
+          }
+        },
+        "column_CjGXgA": {
+          "type": "column",
+          "settings": {
+            "title": "HIPPIE VAN PEACE",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/sneakers-99009900267"
+          }
+        },
+        "column_GpKyea": {
+          "type": "column",
+          "settings": {
+            "title": "PEACE AND BUTTERFLIES",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/activesneakers-001green00345"
+          }
+        }
+      },
+      "block_order": [
+        "column_ribhtB",
+        "column_CjGXgA",
+        "column_GpKyea"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "WORLD PEACE",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_qJQexh": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "<strong>Best Selling Sneakers</strong>",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "sneakers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_RyArw3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Dq7dAX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sarah M.",
+            "heading_size": "h1"
+          }
+        },
+        "text_GLfVMa": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>\"I’m obsessed with these shoes! I already own another pair in a different color, and they never fail to impress. Everywhere I go, people stop to ask where I got them, and I proudly say Yes We Vibe! These shoes are not just stylish but also a true conversation starter. Highly recommend!\"</h2>",
+            "text_style": "body"
+          }
+        },
+        "button_jfMLiy": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "shopify://collections/sneakers",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Dq7dAX",
+        "text_GLfVMa",
+        "button_jfMLiy"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Sarah-M..gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17237124794863e438": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "multicolumn_cymbKg": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Gxrtrq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1-250x250.webp",
+            "title": "FREE Size Replacement",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_faxUMH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2-250x250.webp",
+            "title": "Vegan And Cruelty-Free",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HNMYAc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3-250x250.webp",
+            "title": "Good Vibes Guarantee",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xpq9mh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/4-250x250.webp",
+            "title": "Over 250k Happy Customers",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_H73VnV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/5-250x250.webp",
+            "title": "1.5M Followers",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Gxrtrq",
+        "column_faxUMH",
+        "column_HNMYAc",
+        "column_xpq9mh",
+        "column_H73VnV"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h0",
+        "image_width": "half",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 4,
+        "padding_bottom": 44
+      }
+    },
+    "ywv_lifestyle_reviews_GJyiKy": {
+      "type": "ywv-lifestyle-reviews",
+      "blocks": {
+        "repeater_block_38U6Bi": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Margaret P.",
+            "review_date": "06/27/2024",
+            "review_content": "Just arrived today (after a very short time from ordering). Tried them on: very comfortable, solid, thick sole, padded beneath the ankle and around the foot. Just waiting to actually wear them but I suspect there will be no surprises. Very happy with my (2nd!) purchase.",
+            "review_image": "shopify://shop_images/8_9976deee-5439-4794-bb33-1b2d7d26f42c.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_ykMGCa": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Lori G.",
+            "review_date": "07/26/2024",
+            "review_content": "These boots bring me joy. I am going to be cute and cool for this year at school!",
+            "review_image": "shopify://shop_images/2_8fc1507d-b1bc-413b-9c24-2f3851fcab7e.jpg",
+            "review_ratings": 4
+          }
+        },
+        "repeater_block_ndriEN": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Justin M.",
+            "review_date": "07/08/2024",
+            "review_content": "These came in my second order. Totaling 4 pairs now. These are my favorite. Keep vibing",
+            "review_image": "shopify://shop_images/3_60ec1098-01ae-40a3-992e-43e6699c51bd.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_w67hUf": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Christopher B.",
+            "review_date": "07/07/2024",
+            "review_content": "These shoes regularly attract comments. They are comfortable right from the first wearing and great to walk in. And the white sole makes them look even lighter and brighter!",
+            "review_image": "shopify://shop_images/4_3cd65e39-690b-490d-89fb-ad68bc5fc265.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_6rpDrM": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Kim C.",
+            "review_date": "03/29/2024",
+            "review_content": "Very good communication, pretty quick delivery, and great shoes. Now have 4 pairs. Comfortable and can fit my orthotics in too.",
+            "review_image": "shopify://shop_images/12.png",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_tgt6d3": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Tatiana B.",
+            "review_date": "04/25/2024",
+            "review_content": "Totally in love with my new chunky sneakers ❤️ So fancy, original, specific and fantastic. Very light weight , easy to walk and wear all day 😍",
+            "review_image": "shopify://shop_images/11_ce308a80-5273-49ea-af7e-b56b909697bd.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_wTEhgf": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Ken C.",
+            "review_date": "06/23/2024",
+            "review_content": "Absolutely LOVE my sneakers! They're comfortable and beautiful. and I've been getting compliments from everyone who see them. The process for buying/shipping couldn't have been easier. Definitely will be making another order soon! :)",
+            "review_image": "shopify://shop_images/9_a70e0496-0c99-4596-9ae0-4fb4ed804152.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_kRMaDD": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Brandon W.",
+            "review_date": "06/30/2024",
+            "review_content": "Great fit !Great got them they look and fit fantastic. However they smell really strong of chemicals that’s concerning",
+            "review_image": "shopify://shop_images/6.png",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_J6npyd": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Peter D.",
+            "review_date": "09/20/2023",
+            "review_content": "Good size, nice quality, awesome packing.",
+            "review_image": "shopify://shop_images/20.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_bCz4rA": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Mandi R.",
+            "review_date": "02/28/2024",
+            "review_content": "Cute shoes, sizing was accurate and I had a problem with getting my order and customer service was very helpful and resent my order.",
+            "review_image": "shopify://shop_images/13_82323189-d686-4299-b0fa-46620a0c5b23.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_fdEcBa": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Kristina A.",
+            "review_date": "11/18/2023",
+            "review_content": "Well-made, comfortable, and fit perfectly. Once again, I’m very pleased with my purchase from Yes, We Vibe. The 2-for-1 deal is an added plus!",
+            "review_image": "shopify://shop_images/16.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_tUJeGU": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Masahiro M.",
+            "review_date": "10/30/2023",
+            "review_content": "For me the product I purchased is the bestI loved both the design and the comfort of the shoes. Now I will repeat another product.",
+            "review_image": "shopify://shop_images/17_b6f44fa2-c96f-47fa-80f4-52b4fa3f9938.png",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_9VG4Wp": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Dan O.",
+            "review_date": "10/28/2023",
+            "review_content": "I ordered some slippers about 5 years ago and was very happy with their warmth and durability They never came apart at the seams like most. I ordered some more here recently and I’m very pleased with them as well.",
+            "review_image": "shopify://shop_images/18.jpg",
+            "review_ratings": 1
+          }
+        },
+        "repeater_block_9kQgtp": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Jo D.",
+            "review_date": "09/03/2023",
+            "review_content": "Hands down the best boots I’ve ever owned Fantastic fit and soooo comfortable",
+            "review_image": "shopify://shop_images/23.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_G8MDRw": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Julie C.",
+            "review_date": "05/29/2023",
+            "review_content": "This is the second pair of this pattern that I've bought--I've worn out the first pair! Love your shoes!!",
+            "review_image": "shopify://shop_images/28.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_gnzB6q": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Emilee A.",
+            "review_date": "04/11/2024",
+            "review_content": "This is so popular in our house, it’s hard to get dibs on it… looks like we need to order another, and with buy one get one, why wait!",
+            "review_image": "shopify://shop_images/36.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_Tbny43": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Jackie W.",
+            "review_date": "02/13/2023",
+            "review_content": "I love these shoes! Super comfortable and I get so many compliments about them from friends and strangers alike",
+            "review_image": "shopify://shop_images/39.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_qLwRVF": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Jackie B.",
+            "review_date": "07/02/2024",
+            "review_content": "Thank you so much for provide a pair of boots that are of a high quality. The design is perfect and they are so comfortable. I’m wearing them now. Will definitely come back to your site ❤️",
+            "review_image": "shopify://shop_images/25.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_kyqWLi": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Mehmet G.",
+            "review_date": "09/03/2023",
+            "review_content": "Good vibes, indeed. Came in a great, professional package!",
+            "review_image": "shopify://shop_images/24.jpg",
+            "review_ratings": 5
+          }
+        },
+        "repeater_block_Q8nkUw": {
+          "type": "repeater_block",
+          "settings": {
+            "customer_name": "Pamela M.",
+            "review_date": "04/27/2023",
+            "review_content": "These shoes are perfectly comfortable for lounging around the house and because of the vibrant colors, they match all of my jammies. I know what I'm buying as Christmas gifts this year!",
+            "review_image": "shopify://shop_images/33.jpg",
+            "review_ratings": 5
+          }
+        }
+      },
+      "block_order": [
+        "repeater_block_38U6Bi",
+        "repeater_block_ykMGCa",
+        "repeater_block_ndriEN",
+        "repeater_block_w67hUf",
+        "repeater_block_6rpDrM",
+        "repeater_block_tgt6d3",
+        "repeater_block_wTEhgf",
+        "repeater_block_kRMaDD",
+        "repeater_block_J6npyd",
+        "repeater_block_bCz4rA",
+        "repeater_block_fdEcBa",
+        "repeater_block_tUJeGU",
+        "repeater_block_9VG4Wp",
+        "repeater_block_9kQgtp",
+        "repeater_block_G8MDRw",
+        "repeater_block_gnzB6q",
+        "repeater_block_Tbny43",
+        "repeater_block_qLwRVF",
+        "repeater_block_kyqWLi",
+        "repeater_block_Q8nkUw"
+      ],
+      "settings": {
+        "heading": "Happy Customers!"
+      }
+    },
+    "1724142884acd47da8": {
+      "type": "apps",
+      "blocks": {
+        "stamped_product_reviews_ugc_instagram_feed_ACQrTi": {
+          "type": "shopify://apps/stamped-reviews/blocks/instagram-feed/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "feed_type": "carousel",
+            "color_hover": "",
+            "hover_text": "",
+            "shop_button_text": "",
+            "auto_play": true,
+            "review_ids": "",
+            "product_ids": "",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "4",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": true
+          }
+        }
+      },
+      "block_order": [
+        "stamped_product_reviews_ugc_instagram_feed_ACQrTi"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "collection_list_de4VGL",
+    "multicolumn_mGKxPp",
+    "collection_list_84Mxdx",
+    "collection_list_qhp6Ea",
+    "multicolumn_qGQPNa",
+    "multicolumn_Hhq8kd",
+    "featured_collection_qJQexh",
+    "image_with_text_RyArw3",
+    "17237124794863e438",
+    "multicolumn_cymbKg",
+    "ywv_lifestyle_reviews_GJyiKy",
+    "1724142884acd47da8"
+  ]
+}
