@@ -12,7 +12,7 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/test-banner.jpg",
+        "image": "shopify://shop_images/ShopifyThemeBanner-2-6_1_15ccddf7-3e3f-434c-a6fd-358b30ad1326.jpg",
         "mobileimage_banner": "shopify://shop_images/Mobile_ff724ac2-1107-46b8-9cea-2a7ee435ac47.jpg",
         "redirectionlink": "https://onemilllionmonth.myshopify.com/collections/wintervibesneakers",
         "image_overlay_opacity": 0,
